@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deactivation form</title>
+    <style>
+        .dact{
+            text-align: center;
+            background-color: black;
+            color:red;
+        }
+        .main{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form action="#">
+        <div class="dact">
+            <h3>deactivation form</h3>
+        </div>
+        <div class="main">
+         <h4><b>Account details</b></h4>
+         <label for="fname"> First name</label>
+         <input type="text" id="fname">
+         <label for="lname"> Last name</label>
+         <input type="text" id="lname"><br>
+         <h4><b>verfication</b></h4>
+         <label for="psw"> Enter the password </label>
+         <input type="password" id="psw"><br>
+         <h4><b>Authentication</b></h4>
+        <label for="mail"> Enter your mail id</label>
+         <input type="email" id="mail">
+         <h4 style="color: red;">OTP will be sent to your mails</h4>
+         <label for="otp"> Enter your OTP</label>
+         <input type="number" id="otp">
+        <h4><b>Are you sure you want to deactivate your account</b></h4><br>
+        <label for="check">YES</label>
+        <input type="checkbox" id="check"><br>
+            <button  style="background-color: black; color:red;"  type="submit">deactivate account</button>
+        </div>
+    </form>
+</body>
+</html>
