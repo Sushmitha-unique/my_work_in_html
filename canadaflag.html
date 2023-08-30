@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canadaflag</title>
+</head>
+<body>
+    <canvas id="mycanvas" height="500" width="500" style="border: 1px solid black;"></canvas>
+    <script>
+        var canvas=document.getElementById("mycanvas");
+        var ctx=canvas.getContext("2d");
+        ctx.fillStyle="red";
+        ctx.fillRect(0,0,100,500);
+        ctx.fill();
+        var img=new Image();
+        img.src="canadaflag.png";
+        img.onload=function(){
+            ctx.drawImage(img,200,200);
+        }
+        ctx.fillStyle="red";
+        ctx.fillRect(400,0,100,500);
+        ctx.fill();
+    </script>
+</body>
+</html>
